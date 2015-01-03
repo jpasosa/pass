@@ -1,0 +1,13 @@
+
+2 de Enero del 2014.
+-----------------------------
+
+
+Ejemplos de donde saco las vistas para la aplicación
+
+HOMEPAGE
+http://demo.mosaicpro.biz/adminkit/php/index.html?lang=en&layout_type=fluid&menu_position=menu-left&style=style-dark
+
+
+LOGIN
+http://demo.mosaicpro.biz/adminkit/php/login.html?lang=en&layout_type=fluid&menu_position=menu-left&style=style-dark
