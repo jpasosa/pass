@@ -1,0 +1,8 @@
+
+
+
+
+Utilicé el Confide para hacer los logins. 5 de Enero del 2015.
+
+https://github.com/Zizaco/confide
+http://code.tutsplus.com/tutorials/setting-up-user-authentication-in-laravel-using-confide--cms-21866
