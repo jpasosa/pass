@@ -1,0 +1,66 @@
+
+
+<!-- <form method="POST" action="{{{ URL::to('users') }}}" accept-charset="UTF-8"> -->
+{{ Form::open(array('action'=>'UsersController@store', 'method' => 'post', 'files'=>true)) }}
+
+
+
+
+
+    <input type="hidden" name="_token" value="{{{ Session::getToken() }}}">
+    <fieldset>
+
+
+        <div class="form-group">
+            <label for="name">{{{ Lang::get('confide.name') }}}</label>
+            <input class="form-control" placeholder="{{{ Lang::get('confide.name') }}}" type="text" name="name" id="name" value="{{{ Input::old('name') }}}">
+        </div>
+
+        <div class="form-group">
+            <label for="last_name">{{{ Lang::get('confide.last_name') }}}</label>
+            <input class="form-control" placeholder="{{{ Lang::get('confide.last_name') }}}" type="text" name="last_name" id="last_name" value="{{{ Input::old('last_name') }}}">
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="username">{{{ Lang::get('confide.username') }}}</label>
+            <input class="form-control" placeholder="{{{ Lang::get('confide.username') }}}" type="text" name="username" id="username" value="{{{ Input::old('username') }}}">
+        </div>
+        <div class="form-group">
+            <label for="email">{{{ Lang::get('confide.e_mail') }}} <small>{{ Lang::get('confide.signup.confirmation_required') }}</small></label>
+            <input class="form-control" placeholder="{{{ Lang::get('confide.e_mail') }}}" type="text" name="email" id="email" value="{{{ Input::old('email') }}}">
+        </div>
+        <div class="form-group">
+            <label for="password">{{{ Lang::get('confide.password') }}}</label>
+            <input class="form-control" placeholder="{{{ Lang::get('confide.password') }}}" type="password" name="password" id="password">
+        </div>
+        <div class="form-group">
+            <label for="password_confirmation">{{{ Lang::get('confide.password_confirmation') }}}</label>
+            <input class="form-control" placeholder="{{{ Lang::get('confide.password_confirmation') }}}" type="password" name="password_confirmation" id="password_confirmation">
+        </div>
+
+         <div class="form-group">
+            <label for="file">{{{ Lang::get('confide.image') }}}</label>
+            {{ Form::file('image', $attributes = array('class'=>'form-control', 'data-parsley-required'=>true, 'id'=>'image', 'value'=>"{{{ Input::old('image') }}}")) }}
+        </div>
+
+        @if (Session::get('error'))
+            <div class="alert alert-error alert-danger">
+                @if (is_array(Session::get('error')))
+                    {{ head(Session::get('error')) }}
+                @endif
+            </div>
+        @endif
+
+        @if (Session::get('notice'))
+            <div class="alert">{{ Session::get('notice') }}</div>
+        @endif
+
+        <div class="form-actions form-group">
+          <button type="submit" class="btn btn-primary">{{{ Lang::get('confide.signup.submit') }}}</button>
+        </div>
+
+    </fieldset>
+<!-- </form> -->
+{{ Form::close() }}
