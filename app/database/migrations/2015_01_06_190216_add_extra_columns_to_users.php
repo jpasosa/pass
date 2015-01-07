@@ -15,9 +15,9 @@ class AddExtraColumnsToUsers extends Migration {
 	{
 		Schema::table('users', function($table)
 		{
-			$table->string('name', 255)->after('id');
-			$table->string('last_name', 255)->after('name');
-			$table->string('image', 255)->after('last_name');
+			$table->string('name', 255)->after('id')->nullable();
+			$table->string('last_name', 255)->after('name')->nullable();
+			$table->string('image', 255)->after('last_name')->nullable();
 		});
 	}
 
