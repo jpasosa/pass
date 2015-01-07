@@ -113,10 +113,9 @@
 
 					<br />
 
-					<button type="submit" class="btn btn-icon-stacked btn-block btn-success glyphicons user_add">
+					<button type="submit" class="btn btn-icon-stacked btn-block btn-success ">
 						<i></i>
 						<span>{{{ Lang::get('confide.signup.submit') }}}</span>
-						<span class="strong">&nbsp;</span>
 					</button>
 
 					<p>Problemas? <a href="faq.html?lang=en">Obtener Ayuda</a></p>

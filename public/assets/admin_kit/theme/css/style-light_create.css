@@ -3430,8 +3430,10 @@ h2.glyphicons.cogwheels i:before {
 }
 .btn-icon-stacked span {
   display: block;
-  font-size: 13px;
+  font-size: 20px;
   line-height: normal;
+  font-weight: bold;
+  margin: 0 0 0 20px;
 }
 .btn-facebook {
   background: #5d7cb6;
@@ -4059,11 +4061,11 @@ textarea {
   }
   .table-responsive.block {
     /* Force table to not be like tables anymore */
-  
+
     /* Hide table headers (but not display: none;, for accessibility) */
-  
+
     /* Label the data */
-  
+
   }
   .table-responsive.block table,
   .table-responsive.block thead,
@@ -4083,7 +4085,7 @@ textarea {
   }
   .table-responsive.block td {
     /* Behave  like a "row" */
-  
+
     border: none;
     border-bottom: 1px solid #e5e5e5;
     position: relative;
@@ -4093,10 +4095,10 @@ textarea {
   }
   .table-responsive.block td:before {
     /* Now like a table header */
-  
+
     position: absolute;
     /* Top/left values mimic padding */
-  
+
     vertical-align: middle;
     left: 6px;
     width: 45%;

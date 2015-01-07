@@ -16,7 +16,7 @@ return array(
 				'title'         	=> 'Registro',
 				'desc'        	=> 'Registrar una nueva cuenta',
 				'confirmation_required' => 'Confirmación requerida',
-				'submit'     	=> 'Crear nueva cuenta',
+				'submit'     	=> 'CONFIRMAR',
 		),
 
 		'login' => array(
