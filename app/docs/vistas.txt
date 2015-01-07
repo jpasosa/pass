@@ -11,3 +11,6 @@ http://demo.mosaicpro.biz/adminkit/php/index.html?lang=en&layout_type=fluid&menu
 
 LOGIN
 http://demo.mosaicpro.biz/adminkit/php/login.html?lang=en&layout_type=fluid&menu_position=menu-left&style=style-dark
+
+REGISTRAR CUENTA
+http://demo.mosaicpro.biz/adminkit/php/signup.html?lang=en&layout_type=fluid&menu_position=menu-left&style=style-dark

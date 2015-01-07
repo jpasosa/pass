@@ -2,6 +2,7 @@
 
 
 
+
 /**
  * Class UserRepository
  *
@@ -10,6 +11,7 @@
  */
 class UserRepository
 {
+
 		/**
 		 * Signup a new account with the given parameters
 		 *

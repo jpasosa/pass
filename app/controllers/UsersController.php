@@ -39,17 +39,19 @@ class UsersController extends Controller
 
 		if ($user->id)
 		{
-			if (Config::get('confide::signup_email')) {
+			if (Config::get('confide::signup_email'))
+			{
 				Mail::queueOn(
-					Config::get('confide::email_queue'),
-					Config::get('confide::email_account_confirmation'),
-					compact('user'),
-					function ($message) use ($user) {
-						$message
-						->to($user->email, $user->username)
-						->subject(Lang::get('confide::confide.email.account_confirmation.subject'));
-					}
-					);
+							Config::get('confide::email_queue'),
+							Config::get('confide::email_account_confirmation'),
+							compact('user'),
+							function ($message) use ($user)
+							{
+								$message
+								->to($user->email, $user->username)
+								->subject(Lang::get('confide::confide.email.account_confirmation.subject'));
+							}
+						);
 			}
 
 			return Redirect::action('UsersController@login')
