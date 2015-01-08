@@ -68,7 +68,7 @@
 			<div class="alert">{{ Session::get('notice') }}</div>
 		@endif
 
-		<h3>Crear una cuenta. <span>Ya sos miembro? <a href="login.html?lang=en">Logueate por acá</a></span></h3>
+		<h3>Crear una cuenta. <span>Ya sos miembro? <a href="{{ URL::to('users/login') }}">Logueate por acá</a></span></h3>
 
 		<!-- Form -->
 		{{ Form::open(array('action'=>'UsersController@store', 'method' => 'post', 'files'=>true)) }}
