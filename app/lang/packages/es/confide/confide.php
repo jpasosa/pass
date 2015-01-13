@@ -10,7 +10,7 @@ return array(
 		'password'            	=> 'Contraseña',
 		'password_confirmation' => 'Confirmar Contraseña',
 		'e_mail'                	=> 'Email',
-		'username_e_mail'       => 'Usuario o Email',
+		'username_e_mail' 	=> 'Usuario o Email',
 
 		'signup' => array(
 				'title'         	=> 'Registro',
@@ -66,3 +66,4 @@ return array(
 		),
 
 );
+
