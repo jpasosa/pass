@@ -219,7 +219,7 @@ class UsersController extends Controller
 	{
 		Confide::logout();
 
-		return Redirect::to('/');
+		return Redirect::to('/users/login');
 	}
 
 
