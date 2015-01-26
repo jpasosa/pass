@@ -13,8 +13,12 @@
 
 Route::get('/', function()
 {
-	// return View::make('hello');
-	return View::make('template/homepage');
+	if (Confide::user()) {
+		return View::make('template/homepage');
+	} else {
+		return View::make('confide/login');
+	}
+
 });
 //
 
