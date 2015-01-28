@@ -1212,7 +1212,7 @@ body > .container-fluid.documentation {
 }
 .filter-bar div:not(.helper) {
   float: left;
-  margin: 15px 30px 0 0;
+  margin: 15px 30px 0 30px;
 }
 .filter-bar div.glyphicons {
   padding: 0 0 0 35px;

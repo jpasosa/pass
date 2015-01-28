@@ -35,8 +35,6 @@ class AddExtraColumnsToUsers extends Migration {
 			$table->dropColumn('last_name');
 			$table->dropColumn('image');
 		});
-
-
 	}
 
 }

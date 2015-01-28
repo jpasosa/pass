@@ -6,7 +6,7 @@
 <!--[if !IE]><!--><html><!-- <![endif]-->
 
 <head>
-	<title>easypass (registro)</title>
+	<title>pass (registro)</title>
 
 	<!-- Meta -->
 	<meta charset="UTF-8" />

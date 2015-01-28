@@ -29,6 +29,7 @@
 				</div>
 			</div>
 			@include('template/layout/load_endscripts')
+		</div>
 	</body>
 
 </html>

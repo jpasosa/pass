@@ -5,7 +5,7 @@
 <!--[if gt IE 8]> <html class="ie gt-ie8"> <![endif]-->
 <!--[if !IE]><!--><html><!-- <![endif]-->
 <head>
-	<title>easypass (logueo)</title>
+	<title>pass (logueo)</title>
 
 	<!-- Meta -->
 	<meta charset="UTF-8" />
